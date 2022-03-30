@@ -73,6 +73,14 @@ post
     text-align: center;
     /* padding-left: 500px; */
 }
+.post_form .submitt {
+    padding: 1% 0% 1% 14%;
+    display: flex;
+    margin-left: -14%;
+    justify-content: space-evenly;
+    /* width: 45%; */
+    margin-left: 1%;
+}
 .post_form .submit {
     padding: 1% 0% 1% 14%;
     display: flex;
@@ -81,6 +89,7 @@ post
     width: 45%;
     margin-left: -17%;
 }
+
 .post_form .submit .tweet{
     padding: 0 0 0 27%;
 }
