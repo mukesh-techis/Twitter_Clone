@@ -4,7 +4,7 @@ cloudinary==1.29.0
 Django==4.0.3
 six==1.16.0
 sqlparse==0.3.1
-urllib3==1.26.9
+urllib3==1.26.5
 aenum==2.1.2
 aiohttp==3.7.4.post0
 alembic==1.6.5
