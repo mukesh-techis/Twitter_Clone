@@ -73,10 +73,13 @@ post
     text-align: center;
     /* padding-left: 500px; */
 }
-.post_form .submit{
-    padding:0% 0% 0% 14%;
-    display:flex;
-
+.post_form .submit {
+    padding: 1% 0% 1% 14%;
+    display: flex;
+    margin-left: -14%;
+    justify-content: space-evenly;
+    width: 45%;
+    margin-left: -17%;
 }
 .post_form .submit .tweet{
     padding: 0 0 0 27%;
@@ -184,4 +187,20 @@ post
     }
     
 }
+button.cancelbtn {
+    /* color: white; */
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 80px;
+    border-radius: 7px;
+    background-color: rgb(29, 161, 242);
+    text-align: center;
+    height: 5vh;
+    border: none;
+}
 
+    a#cancel {
+        color: white;
+        text-decoration: none;
+    }

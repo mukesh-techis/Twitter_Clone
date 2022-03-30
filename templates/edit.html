@@ -24,9 +24,10 @@
                         <img class="Image" src="{{posts.image.url}}" style="width:75%" />
                         {% endif %}
                     </div>
-                    <div class="submit" style="padding: 2% 2% 1% 0">
-                        <a href="{% url 'index' %}" id="cancel" type="submit" style="padding:2% 2% 0% 0%">Cancel</a>
-                        <input type="file" id="files" name="image" style="padding: 2% 0% 0% 2%;"/>
+                    <input type="file" id="files" name="image" />
+                    <div class="submit" >
+                        <button class="cancelbtn"><a href="{% url 'index' %}" id="cancel" type="submit">Cancel</a></button>
+                    
                         <input type="submit" value="Update" class="button"/>
                     </div>
                 </form>
