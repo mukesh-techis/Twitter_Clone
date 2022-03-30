@@ -50,13 +50,13 @@ post
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #CCC;
+
 }
 .post_form .name{
     background-color: rgb(196, 250, 233);
-    /* border:1px solid white; */
+    
     border:none;
-    padding: 2% 26% 2% 2%;;
-    /* text-align: left; */
+    
     border-radius: 6px;
 }
 /* .submit{ */
@@ -194,7 +194,9 @@ post
     .posts li .name_body .name {
         font-size: 20px;
     }
-    
+    .post_form input {
+        width: 48%;
+    }
 }
 button.cancelbtn {
     /* color: white; */

@@ -17,7 +17,7 @@
             <div class="post_two">
                 <form action="/edit/{{posts.id}}/" method="POST" enctype="multipart/form-data">
                     {% csrf_token %} 
-                    <div>
+                    <div class="edit-input">
                         <input type="text" name="name" placeholder="Your Name" value="{{posts.name}}" required class="name" />
                         <input name="body" placeholder="What's Happening?" value="{{posts.body}}" required></input>
                         {% if posts.image.url %}
