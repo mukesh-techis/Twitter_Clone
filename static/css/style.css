@@ -4,7 +4,7 @@ common
 
 html,
 body{
-    height:100%;
+    width:100%;
 }
 
 .content{
@@ -34,6 +34,11 @@ body{
 /*
 post
 *********************/
+.post_form .edit-form{
+    display:flex;
+    gap:2%;
+
+}
 
 .post_form{
     padding: 4% 0% 0% 3%;
@@ -41,12 +46,18 @@ post
     text-align: left;
 
 }
+
+.post_form .edit-home-icon{
+    width:12%;
+    height:18%
+
+}
 .post_form .logo_user{
     display:flex;
     gap:3%;
 }
 .post_form input {
-    width: 70%;
+    width: 93%;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #CCC;
@@ -74,21 +85,21 @@ post
     /* padding-left: 500px; */
 }
 .post_form .submitt {
-    padding: 1% 0% 1% 14%;
+    padding: 1% 1% 1% 14%;
     display: flex;
-    margin-left: -14%;
-    justify-content: space-evenly;
+    /* margin-left: -14%; */
+    justify-content: space-between;
     /* width: 45%; */
     margin-left: 1%;
 }
-.post_form .submit {
-    padding: 1% 0% 1% 14%;
+/* .post_form .submit {
+    padding: 1% 1% 1% 14%;
     display: flex;
-    margin-left: -14%;
-    justify-content: space-evenly;
+    /* margin-left: -14%; 
+    justify-content: space-between;
     width: 45%;
     margin-left: -17%;
-}
+} */
 
 .post_form .submit .tweet{
     padding: 0 0 0 27%;
@@ -104,17 +115,18 @@ post
     padding: 0% 0% 1% 3%;;
 
 }  
-
-
-/* .submit #files{
-    width: 70px;
-} */
+.edit-input input{
+    width: 70%;
+}
+#files1{
+    width: 70%;
+}
 
 .post_form textarea{
     width: 70%;
     padding: 0% 27% 10% 0%;
-    border: none;
-    border-bottom: 1px solid #CCC;
+    /* border: none; */
+    /* border-bottom: 1px solid #CCC; */
 
 
 }
@@ -215,3 +227,5 @@ button.cancelbtn {
         color: white;
         text-decoration: none;
     }
+
+

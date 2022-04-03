@@ -10,29 +10,34 @@
         </div>
     </div>
     <section class="post_form">
-        <div class="all_post" style="display:flex" >
-            <div class="logo_user" style="padding-bottom: 2%" >
-                <img src="{% static 'img/user.png' %}" class="home_icon" style="width:60%; height:20%"/>
-            </div>
-            <div class="post_two">
-                <form action="/edit/{{posts.id}}/" method="POST" enctype="multipart/form-data">
-                    {% csrf_token %} 
+        <!-- <div class="all_post" style="display:flex" > -->
+            <!-- <div class="logo_user" style="padding-bottom: 2%" > -->
+            <!-- </div> -->
+           
+            <form action="/edit/{{posts.id}}/" method="POST" enctype="multipart/form-data" class="edit-form">
+                {% csrf_token %} 
+                <img src="{% static 'img/user.png' %}" class="edit-home-icon" />
+
+                <div class="post_two">
                     <div class="edit-input">
                         <input type="text" name="name" placeholder="Your Name" value="{{posts.name}}" required class="name" />
                         <input name="body" placeholder="What's Happening?" value="{{posts.body}}" required></input>
                         {% if posts.image.url %}
                         <img class="Image" src="{{posts.image.url}}" style="width:75%" />
+                        <input type="file" id="files1" name="image" />
+
                         {% endif %}
                     </div>
-                    <input type="file" id="files" name="image" />
                     <div class="submit" >
+
                         <button class="cancelbtn"><a href="{% url 'index' %}" id="cancel" type="submit">Cancel</a></button>
-                    
+                        
                         <input type="submit" value="Update" class="button"/>
                     </div>
-                </form>
-            </div>
-        </div>  
+                </div>
+            </form>
+            
+        <!-- </div>   -->
     </section> 
 </section>
 {% endblock %} 

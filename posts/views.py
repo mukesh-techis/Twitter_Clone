@@ -26,7 +26,7 @@ def index(request):
             return HttpResponseRedirect(form.erros.as_json())
 
     # get all posts , limit=20
-    posts=post.objects.all()[:20]
+    posts=post.objects.all().order_by('-created_at')[:20]
 
     # Show
     return render(request,'posts.html',
