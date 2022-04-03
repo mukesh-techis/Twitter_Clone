@@ -74,10 +74,10 @@ post
     /* padding-left: 500px; */
 }
 .post_form .submitt {
-    padding: 1% 0% 1% 14%;
+    padding: 1% 1% 1% 14%;
     display: flex;
-    margin-left: -14%;
-    justify-content: space-evenly;
+/*     margin-left: -14%; */
+    justify-content: space-between;
     /* width: 45%; */
     margin-left: 1%;
 }
