@@ -4,7 +4,11 @@ common
 
 html,
 body{
+<<<<<<< HEAD
     width:100%;
+=======
+    width:100%
+>>>>>>> c07287be415afa79cadce70cf4da298126bc6360
 }
 
 .content{
@@ -87,7 +91,11 @@ post
 .post_form .submitt {
     padding: 1% 1% 1% 14%;
     display: flex;
+<<<<<<< HEAD
     /* margin-left: -14%; */
+=======
+/*     margin-left: -14%; */
+>>>>>>> c07287be415afa79cadce70cf4da298126bc6360
     justify-content: space-between;
     /* width: 45%; */
     margin-left: 1%;
@@ -227,5 +235,8 @@ button.cancelbtn {
         color: white;
         text-decoration: none;
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c07287be415afa79cadce70cf4da298126bc6360
