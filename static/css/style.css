@@ -4,11 +4,9 @@ common
 
 html,
 body{
-<<<<<<< HEAD
+
     width:100%;
-=======
     width:100%
->>>>>>> c07287be415afa79cadce70cf4da298126bc6360
 }
 
 .content{
@@ -29,15 +27,19 @@ body{
 .content h3{
     padding-left: 30px;
     font-family: sans-serif;
-    /* border-bottom: 1px solid #CCC; */
 }
 .content .image{
     width: 50px;
 }
 
+
+
 /*
-post
+post_form
 *********************/
+
+
+
 .post_form .edit-form{
     display:flex;
     gap:2%;
@@ -74,9 +76,7 @@ post
     
     border-radius: 6px;
 }
-/* .submit{ */
-    /* border-bottom: 1px solid #CCC; */
-/* } */
+
 .post_form .button{
     color:white;
     font-weight: bold;
@@ -86,23 +86,14 @@ post
     border-radius: 7px;
     background-color: rgb(29, 161, 242);
     text-align: center;
-    /* padding-left: 500px; */
 }
 .post_form .submitt {
     padding: 1% 1% 1% 14%;
     display: flex;
     justify-content: space-between;
-    /* width: 45%; */
     margin-left: 1%;
 }
-/* .post_form .submit {
-    padding: 1% 1% 1% 14%;
-    display: flex;
-    /* margin-left: -14%; 
-    justify-content: space-between;
-    width: 45%;
-    margin-left: -17%;
-} */
+
 
 .post_form .submit .tweet{
     padding: 0 0 0 27%;
@@ -128,11 +119,18 @@ post
 .post_form textarea{
     width: 70%;
     padding: 0% 27% 10% 0%;
-    /* border: none; */
-    /* border-bottom: 1px solid #CCC; */
 
 
 }
+
+
+
+/*
+post_form
+*********************/
+
+
+
 
 .posts ul{
     padding:0;
@@ -179,14 +177,11 @@ post
 
 .posts li .name_body {
     flex-basis: 85%;
-    /* display:flex; */
 
-    /* position: absolute; */
 }
 
 .posts li .name_time {
     display:flex;
-    /* padding-right: 10px; */
 }
 
 .posts li .name_body .name{
@@ -214,7 +209,6 @@ post
     }
 }
 button.cancelbtn {
-    /* color: white; */
     font-weight: bold;
     font-family: sans-serif;
     font-size: 15px;
@@ -230,8 +224,3 @@ button.cancelbtn {
         color: white;
         text-decoration: none;
     }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c07287be415afa79cadce70cf4da298126bc6360
