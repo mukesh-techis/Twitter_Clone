@@ -9,7 +9,7 @@ from .forms import PostForm
 #     ctx= {'Pictures':img}
 #     return render(request,'templates/posts.html',ctx)
 def index(request): 
-    # If the Method is post
+    # If the Method is post 
     if request.method == 'POST':
         form=PostForm(request.POST,request.FILES)
         # if the form is valid
