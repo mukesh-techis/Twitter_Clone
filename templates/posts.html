@@ -16,7 +16,7 @@
             <div class="logo_user">
                 <div class="logo_bar">
                     {% load static %}
-                    <img src="{% static 'img/user.png' %}" class="home_icon"/>
+                    <img src="{% static 'img/global.png' %}" class="home_icon"/>
                 </div>
                 <div class="namebar">
                     <input type="text" name="name" placeholder="Your Name" required class="name">
@@ -35,14 +35,14 @@
         <ul>
             {% for post in posts %}
             <li>
-                <img class="menu_icon js-menu-icon" src="{% static 'img/option.png' %}" />
+                <img class="menu_icon js-menu-icon" src="{% static 'img/menu.png' %}" />
                 <div class="menu">
-                    <a href="/edit/{{ post.id }}/">Edit</a><br />
+                    <a href="/edit/{{ post.id }}/">Edit</a><br /> <hr />
                     <a href="/delete/{{ post.id }}/">Delete</a>
                 </div>
                 <div class="content_space">
                     <div class="logo">
-                        <img src="{% static 'img/user.png' %}" />
+                        <img src="{% static 'img/global.png' %}" />
                     </div>
                     <div class="name_body">
                         <div class="name_time">
@@ -51,10 +51,10 @@
                         </div>
                         <p> {{ post.body }}</p>
                         {% if post.image.url %}
-                        <img src="{{post.image.url}}" alt="" style="width:60%">
+                        <img src="{{post.image.url}}" alt="" class="post-img">
                         {% endif %}
                         <div class="like">
-                            <div><a href="/like/{{ post.id }}/" ><img src="{% static 'img/like.png' %}"  class="likebtn"/></a></div>
+                            <div><a href="/like/{{ post.id }}/" ><img src="{% static 'img/heart.png' %}"  class="likebtn"/></a></div>
                             {{post.likes}}
                         </div>
                     </div>

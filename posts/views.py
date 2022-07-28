@@ -52,9 +52,7 @@ def delete(request,post_id):
 
 
 def edit(request, post_id):
-    # if request.method == "GET":
-    #     posts = post.objects.get(id=post_id)
-    #     return render(request, "edit.html", {"posts": post})
+   
     posts = post.objects.get(id=post_id)
     if request.method == "POST":
        
