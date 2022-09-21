@@ -39,18 +39,6 @@ def delete(request,post_id):
     Post.delete()
     return HttpResponseRedirect('/')
 
-# def edit(request,post_id):
-#     # Find post
-#     if request.method =='POST':
-#         Post=post.objects.get(id=post_id)
-#         if Post.is_valid():
-
-#             Post.edit()
-#             return HttpResponseRedirect('/')
-#         else:
-#             return HttpResponseRedirect(Post.erros.as_json())
-
-
 def edit(request, post_id):
    
     posts = post.objects.get(id=post_id)
@@ -64,8 +52,6 @@ def edit(request, post_id):
             return HttpResponse("not valid")
 
     return render(request,'edit.html', {'posts': posts})
-
-
 
 
 def likebtn(request,post_id):
